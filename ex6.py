@@ -20,7 +20,8 @@ while True:
 """
 if __name__ == '__main__':
     numeros = []
-    for x in range(1, 4):
+    numaro = int(input(f' quantos numeros?'))
+    for x in range(1, numaro + 1):
         numeros.append(int(input(f'numero{x}:')))
     print(numeros)
     menor = numeros[0]

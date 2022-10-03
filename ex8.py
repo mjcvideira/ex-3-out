@@ -21,10 +21,13 @@ if __name__ == '__main__':
     continuar = True
     while continuar == True:
         s = int(input('quantos segundos?'))
-        if s >= 0:
+        if s > 0:
             dias = s / 86400
             print(f'{dias} dias')
             continuar = True
+        if s == 0:
+            continuar = True
+            print(f'não pode ser 0')
         else:
             print(f'o programa acabou')
             continuar = False

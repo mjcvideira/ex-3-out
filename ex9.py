@@ -26,6 +26,9 @@ O número é: 3257
 """
 if __name__ == '__main__':
     numeros = []
-    numero = numeros.append(int(input(f'numero:')))
-        if numero >= 0
+    quantos = []
+    quantos = (input(f'quantos valores?'))
+    for x in range(len(quantos)):
+        numero = numeros.append(int(input(f'numero:')))
+    print(numeros)
 
