@@ -7,19 +7,20 @@ minutos), e calcula a velocidade média em:
 (b) m/s
 
 """
-
-"""
-Este programa implementa funções aritméticas
-"""
-
-
 def aritmetica(valor1, valor2):
-    total = valor1 / valor2
+    valor3 = valor2 / 60
+    total = valor1 / valor3
     return total
+def metro(valor1, valor2):
+    valor3 = valor1 * 1000
+    valor4 = valor2 * 60
+    total = valor3 / valor4
 
 if __name__ == '__main__':
-    km = int(input('diz um numaro'))
-    horas = int(input('diz outro'))
+    km = int(input('quantos km'))
+    horas = int(input('quantos minutos'))
     vm = (aritmetica(km, horas))
-    print(int(f' velocidade media é {vm} km/hora'))
+    print(f' velocidade media é {vm} km/hora')
+    vs = (aritmetica((km, horas)))
+    print(f' velocidade em m/s é {vs}')
 
