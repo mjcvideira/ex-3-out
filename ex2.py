@@ -7,20 +7,20 @@ minutos), e calcula a velocidade média em:
 (b) m/s
 
 """
-def aritmetica(valor1, valor2):
-    valor3 = valor2 / 60
-    total = valor1 / valor3
+def km(valor1, valor2):
+    valor2 = valor2 / 60
+    total = valor1 / valor2
     return total
 def metro(valor1, valor2):
-    valorm = valor1 * 1000
-    valorh = valor2 * 60
-    total = valorm / valorh
+    valor1 = valor1 * 1000
+    valor2 = valor2 * 60
+    total = valor1 / valor2
+    return total
+
+
 
 if __name__ == '__main__':
-    km = int(input('quantos km'))
+    kmv = int(input('quantos km'))
     horas = int(input('quantos minutos'))
-    vm = (aritmetica(km, horas))
-    print(f' velocidade media é {vm} km/hora')
-    vs = (aritmetica((km, horas)))
-    print(f' velocidade em m/s é {vs}')
+    print(f'A velocidade média é {km(kmv, horas)} K/H e {metro(kmv, horas)} M/S')
 
