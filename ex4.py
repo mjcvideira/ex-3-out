@@ -3,6 +3,20 @@ certo número de segundos e que escreve o número de dias, horas, minutos
 e segundos correspondentes a esse número. Por exemplo,
 Escreva o número de segundos 345678
 dias: 4 horas: 0 mins: 1 segs: 18"""
+def dia(valor):
+    dias = valor / 60
+    dias = dias / 60
+    dias = dias / 24
+
+    return dias
+
+
+def hour(valor):
+    hours = valor % (24 * 3600)
+    hours = hours // 3600
+
+    return hours
+
 if __name__ == '__main__':
     s = int(input('quantos segundos?'))
     dias = s / 86400

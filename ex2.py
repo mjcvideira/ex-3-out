@@ -12,9 +12,9 @@ def aritmetica(valor1, valor2):
     total = valor1 / valor3
     return total
 def metro(valor1, valor2):
-    valor3 = valor1 * 1000
-    valor4 = valor2 * 60
-    total = valor3 / valor4
+    valorm = valor1 * 1000
+    valorh = valor2 * 60
+    total = valorm / valorh
 
 if __name__ == '__main__':
     km = int(input('quantos km'))

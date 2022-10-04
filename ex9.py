@@ -35,6 +35,7 @@ if __name__ == '__main__':
         if nr < 0:
             continuar = False
             print(f'cabou')
-            print(n)
+            [print(x, end='') for x in n]
+
 
 
