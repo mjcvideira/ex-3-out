@@ -24,11 +24,17 @@ Escreva um dígito
 ? -1
 O número é: 3257
 """
+n = []
 if __name__ == '__main__':
-    numeros = []
-    quantos = []
-    quantos = (input(f'quantos valores?'))
-    for x in range(len(quantos)):
-        numero = numeros.append(int(input(f'numero:')))
-    print(numeros)
+    continuar = True
+    while continuar == True:
+        nr = int(input(f'numero'))
+        if nr >= 0:
+            n.append(nr)
+            continuar = True
+        if nr < 0:
+            continuar = False
+            print(f'cabou')
+            print(n)
+
 
